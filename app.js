@@ -19,6 +19,16 @@ function submitClick(e){
     li.className = "collection-item"
     li.appendChild(document.createTextNode(input.value));
 
+    let a = document.createElement('a');
+    a.className = "delete-item secondary-content";
+
+    let i = document.createElement('i');
+    i.className = "fa fa-remove";
+
+    a.appendChild(i);
+
+    li.appendChild(a);
+
     taskList.appendChild(li);
     input.value = "";
 
