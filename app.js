@@ -20,6 +20,7 @@ function submitClick(e){
     li.appendChild(document.createTextNode(input.value));
 
     taskList.appendChild(li);
+    input.value = "";
 
     e.preventDefault();
 }
